@@ -103,4 +103,4 @@ An observation to this pseudocode, it reuses a considerable block of code, in th
 <img width="296" alt="Screenshot_20230226_193403" src="https://user-images.githubusercontent.com/124604730/221447380-1a0e80db-fe74-44d8-ad74-8c4e51256d7c.png">
 
 
-P.D. I'am sorry not to upload the pseudocode nor flowchart in english, I realised late it was a good idea to write this repo in english. 
+P.D. I'am sorry not to upload the pseudocode nor flowcharts in english, I realised late it was a good idea to write this repo in english. 
