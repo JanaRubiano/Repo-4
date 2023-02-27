@@ -6,7 +6,7 @@ For finding prime numbers until an nth number, I defined  4 variables:
 3. A whole number x for storing a variable of a loop.
 4. A second whole number divisor for another loop.
 
-The algorithm starts a first loop that goes from 1=x to n, and then makes another loop from divisor = 2 to the integer equal or right below the square root of x. It check if the module of x/divisor equals 0, if this is the case it appends it to the list. After checking the other modules, it exits the loop and checks if the list is empty. An empty list means that the number is prime because there were no divisors diferent from 1 and the number itself.
+The algorithm starts a first loop that goes from 1=x to n, and then makes another loop from divisor = 2 to the integer equal or right below the square root of x. It checks if the module of x/divisor equals 0, if this is the case it appends it to the list. After checking the other modules, it exits the loop and checks if the list is empty. An empty list means that the number is prime because there were no divisors diferent from 1 and the number itself.
 If the condition is met, the number is printed and the loop starts again.
 
 ##### Below is the pseudocode for finding prime numbers.
@@ -32,8 +32,8 @@ And this is its flowchart.
 
 ## Square Root
 The process for finding the sqaure root with three decimals of an integer is far more extensive than the one for finding prime numbers. Therefore, I'm not going to explain it so deeply. 
-The Square Root algorithm basically subtracts, devides and adds new pairs of numbers for repeating the process over and over until the remainder equals 0, or the decimal places equal 3. So, what makes the process of finding the sqaure root quite extensive, is the number of decisions  the algorithm must make in a loop. Moreover, it must take into account, what it previously has done.
-For example: If in the last loop I have added a pair of 00 to the remainder, and when I substract the next posible answer to the remainder it still equals a negative number, then I can´t add again another pair of 00, I must write 0 to the answer. 
+The Square Root algorithm basically subtracts, devides and adds new pairs of numbers for repeating the process over and over until the remainder equals 0, or the decimal places equal 3. So, what makes the process of finding the sqaure root quite extensive, is the number of decisions the algorithm must make in a loop. Moreover, it must take into account, what it previously has done.
+For example: If in the last loop I have added a pair of 00 to the remainder, and when I substract the next posible answer to the remainder it still equals a negative number, then I can´t add again another pair of 00, I must write 0 as the answer. 
 
 An observation to this pseudocode, it reuses a considerable block of code, in this case a function could be called. 
 
