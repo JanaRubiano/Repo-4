@@ -53,7 +53,7 @@ An observation to this pseudocode, it reuses a considerable block of code, in th
     Fin para
     
     p = parejas(1)
-    Para (x=1 hasta x<=p/2) hacer			
+    Para (x=1 hasta x<=p**0.5) hacer # p**0.5 no debería ser, pero no encontré forma.			
     	agregar x*x a cifras_res
     Fin para
     
@@ -96,8 +96,8 @@ An observation to this pseudocode, it reuses a considerable block of code, in th
 	
   This is the flowchart
   
-
-<img width="343" alt="Screenshot_20230226_192937" src="https://user-images.githubusercontent.com/124604730/221447136-0507ff96-e3d2-47ab-9b9b-782b1154c842.png">
+  
+<img width="322" alt="Screenshot_20230226_220733" src="https://user-images.githubusercontent.com/124604730/221463879-d51f4285-6517-4111-8d2f-89838c38810e.png">
 <img width="339" alt="Screenshot_20230226_193605" src="https://user-images.githubusercontent.com/124604730/221447555-cb937bb3-6ae2-4cbc-85fd-dd605098502c.png">
 
 <img width="296" alt="Screenshot_20230226_193403" src="https://user-images.githubusercontent.com/124604730/221447380-1a0e80db-fe74-44d8-ad74-8c4e51256d7c.png">
