@@ -31,13 +31,13 @@ And this is its flowchart.
 
 
 ## Square Root
-The process for finding the sqaure root with three decimals of an integer is far more extensive than the one for finding prime numbers. Therefore, I'm not going to explain it so deeply. 
-The Square Root algorithm basically subtracts, devides and adds new pairs of numbers for repeating the process over and over until the remainder equals 0, or the decimal places equal 3. So, what makes the process of finding the sqaure root quite extensive, is the number of decisions the algorithm must make in a loop. Moreover, it must take into account, what it previously has done.
+The process for finding the square root with three decimals of an integer is far more extensive than the one for finding prime numbers. Therefore, I'm not going to explain it so deeply. 
+The Square Root algorithm basically subtracts, devides and adds new pairs of numbers for repeating the process over and over until the remainder equals 0, or the decimal places equal 3. So, what makes the process of finding the square root quite extensive, is the number of decisions the algorithm must make in a loop. Moreover, it must take into account, what it previously has done.
 For example: If in the last loop I have added a pair of 00 to the remainder, and when I substract the next posible answer to the remainder it still equals a negative number, then I can´t add again another pair of 00, I must write 0 as the answer. 
 
 An observation to this pseudocode, it reuses a considerable block of code, in this case a function could be called. 
 
-##### Below is the pseudocode for finding the sqaure root of an integer.
+##### Below is the pseudocode for finding the square root of an integer.
     
     [variables]
     n = entero_1
