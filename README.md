@@ -73,7 +73,7 @@ An observation to this pseudocode, it reuses a considerable block of code, in th
     						escribir resultado con coma en el tercer lugar de der a izq.
     					Sino x = x + 1
     			Fin para
-    Fin para
+    
     		 
     		Sino 
     			añadir 00 a la der de p 
