@@ -59,7 +59,7 @@ An observation to this pseudocode, it reuses a considerable block of code, in th
     
     res = maximo valor en cifras_res
     
-    Si (p-res == 0 y longitud de parejas == 0) hacer
+    Si (p-res**2 == 0 y longitud de parejas == 0) hacer
     	escribir resultado
     
     Para (x=2 hasta longitud(parejas)) hacer
