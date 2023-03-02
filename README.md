@@ -10,21 +10,23 @@ The algorithm starts a first loop that goes from 1=x to n, and then makes anothe
 If the condition is met, the number is printed and the loop starts again.
 
 ##### Below is the pseudocode for finding prime numbers.
-    
-    [variables]
-    n : entero
-    divisores_x : lista[]
-    
-    inicio
-    	Para (x=1 hasta n) hacer
-    		Para (divisor=2 hasta entero(sqrt(x))) hacer
-    			Si modulo(x,divisor) == 0 entonces
-    				agregar divisor a divisores_x
-    		Fin para
-    		Si longitud de divisores_x == 0
-    			escribir("x") 
-    	Fin para
-    Fin
+```pseudocode  
+[variables]
+n : entero
+divisores_x : lista[]
+
+inicio
+Para (x=1 hasta n) hacer
+	Para (divisor=2 hasta entero(sqrt(x))) hacer
+		Si modulo(x,divisor) == 0 entonces
+			agregar divisor a divisores_x
+	Fin para
+	Si longitud de divisores_x == 0
+		escribir("x") 
+Fin para
+Fin
+```
+
 And this is its flowchart.	
 <img width="303" alt="Screenshot_20230226_192316" src="https://user-images.githubusercontent.com/124604730/221446772-111511c4-8bfd-410e-b7c6-48b6d28e3f7c.png">
 
@@ -38,62 +40,62 @@ For example: If in the last loop I have added a pair of 00 to the remainder, and
 An observation to this pseudocode, it reuses a considerable block of code, in this case a function could be called. 
 
 ##### Below is the pseudocode for finding the square root of an integer.
-    
-    [variables]
-    n = entero_1
-    x = entero_2
-    c = 0 (contador)
-    p = cifra de 1 o mas dígitos
-    cifras_res = enetro_3
-    parejas = lista[p1, p2...]
-    res = resultado entero/decimal
-    
-    Para (x=1 hasta n con paso -2) hacer	
-    	agregar a parejas
-    Fin para
-    
-    p = parejas(1)
-    Para (x=1 hasta x<=p**0.5) hacer # p**0.5 no debería ser, pero no encontré forma.			
-    	agregar x*x a cifras_res
-    Fin para
-    
-    res = maximo valor en cifras_res
-    
-    Si (p-res**2 == 0 y longitud de parejas == 0) hacer
-    	escribir resultado
-    
-    Para (x=2 hasta longitud(parejas)) hacer
-    	Si ((p-(res*2 + 1)) == a número negativo) hacer
-    		Si (en el loop anterior se añadió 00 o se añdió pareja) hacer
-    			Para (x=0 hasta 9) hacer
-    				Si ((res*2 con unidad x) * x)  <= a p hacer
-    					p = p - (res*2 con unidad x) * x
-    					añadir x a res 
-    					Si (c == 3 o p == 0) hacer
-    						escribir resultado con coma en el tercer lugar de der a izq.
-    					Sino x = x + 1
-    			Fin para
-    
-    		 
-    		Sino 
-    			añadir 00 a la der de p 
-    			c = c + 1
-    			x = x + 1
-    			
-    				
-    	Sino
-    		Si (en el loop anterior se añadió 00 o se añdió pareja) hacer
-    			Para (x=0 hasta 9) hacer
-    				Si ((res*2 con unidad x) * x)  <= a p hacer
-    					p = p - (res*2 con unidad x) * x
-    					añadir x a res 
-    					Si (c == 3 o p == 0) hacer
-    						escribir resultado con coma en el tercer lugar de der a izq.
-    					Sino x = x + 1
-    	
-    			Fin para
-    Fin	     
-	
+ ```pseudocode   
+[variables]
+n = entero_1
+x = entero_2
+c = 0 (contador)
+p = cifra de 1 o mas dígitos
+cifras_res = enetro_3
+parejas = lista[p1, p2...]
+res = resultado entero/decimal
+
+Para (x=1 hasta n con paso -2) hacer	
+agregar a parejas
+Fin para
+
+p = parejas(1)
+Para (x=1 hasta x<=p**0.5) hacer # p**0.5 no debería ser, pero no encontré forma.			
+agregar x*x a cifras_res
+Fin para
+
+res = maximo valor en cifras_res
+
+Si (p-res**2 == 0 y longitud de parejas == 0) hacer
+escribir resultado
+
+Para (x=2 hasta longitud(parejas)) hacer
+Si ((p-(res*2 + 1)) == a número negativo) hacer
+	Si (en el loop anterior se añadió 00 o se añdió pareja) hacer
+		Para (x=0 hasta 9) hacer
+			Si ((res*2 con unidad x) * x)  <= a p hacer
+				p = p - (res*2 con unidad x) * x
+				añadir x a res 
+				Si (c == 3 o p == 0) hacer
+					escribir resultado con coma en el tercer lugar de der a izq.
+				Sino x = x + 1
+		Fin para
+
+
+	Sino 
+		añadir 00 a la der de p 
+		c = c + 1
+		x = x + 1
+
+
+Sino
+	Si (en el loop anterior se añadió 00 o se añdió pareja) hacer
+		Para (x=0 hasta 9) hacer
+			Si ((res*2 con unidad x) * x)  <= a p hacer
+				p = p - (res*2 con unidad x) * x
+				añadir x a res 
+				Si (c == 3 o p == 0) hacer
+					escribir resultado con coma en el tercer lugar de der a izq.
+				Sino x = x + 1
+
+		Fin para
+Fin	     
+```	
   This is the flowchart
   
   
